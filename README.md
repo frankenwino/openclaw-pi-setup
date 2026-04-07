@@ -4,14 +4,14 @@ A guide to running [OpenClaw](https://openclaw.ai) on a Raspberry Pi 4, using Ma
 
 ## Contents
 
-1. [OS Setup](01-os-setup.md)
-2. [Docker Setup](02-docker-setup.md)
-3. [Tailscale Setup](03-tailscale.md)
-4. [Stack Deployment](04-stack-deployment.md)
-5. [HTTPS with mkcert](05-https-mkcert.md)
-6. [OpenClaw Configuration](06-openclaw.md)
-7. [Client Setup](07-client-setup.md)
-8. [Maintenance](08-maintenance.md)
+1. [OS Setup](guide/01-os-setup.md)
+2. [Docker Setup](guide/02-docker-setup.md)
+3. [Tailscale Setup](guide/03-tailscale.md)
+4. [Stack Deployment](guide/04-stack-deployment.md)
+5. [HTTPS with mkcert](guide/05-https-mkcert.md)
+6. [OpenClaw Configuration](guide/06-openclaw.md)
+7. [Client Setup](guide/07-client-setup.md)
+8. [Maintenance](guide/08-maintenance.md)
 
 ---
 
@@ -103,7 +103,7 @@ sudo hostnamectl set-hostname your-hostname  # change it
 These docs work on a VirtualBox VM with minor adjustments.
 
 1. Create a VM: Ubuntu Server 24.04 LTS, 2GB+ RAM, 20GB+ disk, network set to **Bridged Adapter**
-2. Follow these docs from [02-docker-setup.md](02-docker-setup.md) onwards
+2. Follow these docs from [02-docker-setup.md](guide/02-docker-setup.md) onwards
 3. Instead of a USB stick, create a local directory:
    ```bash
    sudo mkdir -p /opt/docker-volumes/{synapse,element,openclaw,nginx/certs}
